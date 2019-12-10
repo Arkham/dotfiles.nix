@@ -36,6 +36,7 @@ in {
     pkgs.htop
     pkgs.nixfmt
     pkgs.reattach-to-user-namespace
+    pkgs.watch
   ];
 
   programs.git = {
