@@ -249,6 +249,10 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :MundoToggle<CR>
 nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
 nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
+nmap p <plug>(YoinkPaste_p)
+nmap P <plug>(YoinkPaste_P)
+nmap <C-n> <plug>(YoinkPostPasteSwapBack)
+nmap <C-p> <plug>(YoinkPostPasteSwapForward)
 " }}
 
 " Plugins configuration {{{
@@ -290,6 +294,9 @@ let g:polyglot_disabled = ['json']
 let g:test#preserve_screen = 1
 let g:test#ruby#rspec#executable = "spring rspec"
 let g:test#strategy = "vimux"
+let g:yoinkIncludeDeleteOperations = 1
+let g:yoinkSavePersistently = 1
+let g:yoinkSwapClampAtEnds = 0
 " }}}
 
 command! -bang -nargs=* Ag
