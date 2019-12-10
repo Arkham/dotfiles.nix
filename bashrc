@@ -42,38 +42,8 @@ PROMPT_GIT="${GREEN}\$(__git_ps1)"
 PROMPT_FOOTER="\n\$(is_vim_running && echo \"${red}\" || echo \"${BLACK}\")↳ ${GREEN}\$ ${NC}"
 PS1="${PROMPT_INFO}${PROMPT_DIRENV}${PROMPT_GIT} ${PROMPT_FOOTER}"
 
-## Aliases
-alias ls="ls -hF --color"
-alias la="ls -lA"
-alias recent="ls -lAt"
-alias rm="rm -i"
-alias mv="mv -i"
-alias cp="cp -i"
-#
-alias vim="PYTHONPATH='' nvim"
-alias im="vim"
-alias hs='history | grep --color=auto'
-alias grep="grep --color=auto"
-alias sudo="sudo "
-
-## Shopt options
-shopt -s cdspell        # This will correct minor spelling errors in cd command.
-shopt -s checkwinsize   # Check window size (rows, columns) after each command.
-shopt -s cmdhist        # Save multi-line commands in history as single line.
-shopt -s dotglob        # Include dotfile in path-name expansions.
-shopt -s histappend     # Append to history rather than overwrite.
-shopt -s nocaseglob     # Pathname expansion will be treated as case-insensitive.
-stty -ixon              # Disable console start/stop: makes ^S and ^Q go through
-
-## Exports
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-export PROMPT_COMMAND="echo"
-export HISTCONTROL="ignoreboth"
-export EDITOR="/usr/local/bin/nvim"
-export RUBY_CONFIGURE_OPTS="--disable-install-doc"
-export FZF_DEFAULT_COMMAND="ag -g ''"
-export ERL_AFLAGS="-kernel shell_history enabled"
+# Disable console start/stop: makes ^S and ^Q go through
+stty -ixon
 
 ## Colored manpages
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -83,10 +53,6 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
-
-## Bash completion
-BREW_PREFIX="$(has_program brew && brew --prefix)"
-safe_source ${BREW_PREFIX}/etc/bash_completion
 
 ## Load direnv
 has_program direnv && eval "$(direnv hook bash)"

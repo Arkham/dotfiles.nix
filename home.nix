@@ -81,6 +81,7 @@ in {
     sessionVariables = {
       PROMPT_COMMAND = "echo";
       EDITOR = "nvim";
+      RUBY_CONFIGURE_OPTS = "--disable-install-doc";
       ERL_AFLAGS = "-kernel shell_history enabled";
     };
     shellAliases = {
