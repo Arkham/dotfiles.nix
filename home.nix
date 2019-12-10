@@ -45,6 +45,7 @@ in {
     enable = true;
     userName = "Ju Liu";
     userEmail = "ju@noredink.com";
+    ignores = [ "*~" "tags" ".env" ".DS_Store" ];
     aliases = {
       ci = "commit";
       co = "checkout";
