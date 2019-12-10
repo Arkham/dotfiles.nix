@@ -83,6 +83,7 @@ in {
       EDITOR = "nvim";
       RUBY_CONFIGURE_OPTS = "--disable-install-doc";
       ERL_AFLAGS = "-kernel shell_history enabled";
+      SHELL = "${pkgs.bashInteractive}/bin/bash";
     };
     shellAliases = {
       ls = "ls -hF --color";

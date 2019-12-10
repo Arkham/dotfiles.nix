@@ -100,7 +100,7 @@ function mkcd {
 # find or create tmux session
 function tat {
   name=$(basename `pwd` | sed -e 's/\.//g')
-  (tmux ls | grep $name) && tmux attach -t $name || direnv exec / tmux new-session -s $name
+  (tmux ls 2>&1 | grep $name) && tmux attach -t $name || direnv exec / tmux new-session -s $name
 }
 
 # repeat command
