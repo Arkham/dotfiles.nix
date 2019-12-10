@@ -3,7 +3,8 @@
 let
   sources = import ./nix/sources.nix;
 
-  vimSources = lib.filterAttrs (_: source: lib.hasAttrByPath [ "vim" ] source) sources;
+  vimSources =
+    lib.filterAttrs (_: source: lib.hasAttrByPath [ "vim" ] source) sources;
 
   vimUnpatched = lib.mapAttrs (name: source:
     pkgs.vimUtils.buildVimPlugin {
@@ -55,7 +56,8 @@ in {
       newbr = "checkout -b";
       rmbr = "branch -d";
       mvbr = "branch -m";
-      cleanbr = "!git remote prune origin && git co master && git branch --merged | grep -v '\*' | xargs -n 1 git branch -d && git co -";
+      cleanbr =
+        "!git remote prune origin && git co master && git branch --merged | grep -v '*' | xargs -n 1 git branch -d && git co -";
       as = "update-index --assume-unchanged";
       nas = "update-index --no-assume-unchanged";
       al = "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'";
@@ -106,7 +108,8 @@ in {
     enable = true;
     viAlias = true;
     vimAlias = true;
-    plugins = (lib.mapAttrsToList (_: plugin: plugin) vimPlugins) ++ [ pkgs.fzf ];
+    plugins = (lib.mapAttrsToList (_: plugin: plugin) vimPlugins)
+      ++ [ pkgs.fzf ];
     extraConfig = builtins.readFile ./vimrc;
   };
 

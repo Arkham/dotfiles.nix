@@ -68,9 +68,7 @@ set smartcase                     " unless they contain at least one capital let
 set splitright                    " create new horizontal split on the right
 set splitbelow                    " create new vertical split below the current window
 
-" Backup and status line
-set backupdir=~/.vim/_backup      " where to put backup files.
-set directory=~/.vim/_temp        " where to put swap files.
+" Status line
 set laststatus=2
 " }}}
 
@@ -251,10 +249,6 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :MundoToggle<CR>
 nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
 nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
-map p <Plug>(miniyank-autoput)
-map P <Plug>(miniyank-autoPut)
-map <C-P> <Plug>(miniyank-cycle)
-map <C-N> <Plug>(miniyank-cycleback)
 " }}
 
 " Plugins configuration {{{
@@ -284,6 +278,12 @@ let g:loaded_python_provider = 1
 let g:miniyank_filename = $HOME."/.vim/.miniyank.mpack"
 let g:mundo_right = 1
 let g:neoformat_enabled_json = []
+let g:neoformat_nix_nixfmt = {
+  \ 'exe': 'nixfmt',
+  \ 'args': ['--width', '80'],
+  \ 'stdin': 1,
+  \ }
+let g:neoformat_enabled_nix = ['nixfmt']
 let g:neoformat_enabled_ruby = []
 let g:neoformat_only_msg_on_error = 1
 let g:polyglot_disabled = ['json']
