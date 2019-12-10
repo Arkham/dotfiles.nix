@@ -29,6 +29,7 @@ in {
   home.packages = [
     pkgs.ag
     pkgs.bashCompletion
+    pkgs.nix-bash-completions
     pkgs.bashInteractive
     pkgs.coreutils
     pkgs.direnv
@@ -74,15 +75,7 @@ in {
 
   programs.bash = {
     enable = true;
-    profileExtra = ''
-      export LANG=en_US.UTF-8
-      export LC_CTYPE=en_US.UTF-8
-      export LC_ALL=en_US.UTF-8
-
-      . "$HOME/.nix-profile/etc/profile.d/nix.sh"
-      . "$HOME/.nix-profile/etc/profile.d/bash_completion.sh"
-      . "$HOME/.nix-profile/etc/bash_completion.d/git-prompt.sh"
-    '';
+    profileExtra = builtins.readFile ./profile;
     historyControl = [ "ignorespace" "ignoredups" ];
     sessionVariables = {
       PROMPT_COMMAND = "echo";
