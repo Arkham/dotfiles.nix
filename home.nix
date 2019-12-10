@@ -39,6 +39,8 @@ in {
     pkgs.nixfmt
     pkgs.reattach-to-user-namespace
     pkgs.watch
+    pkgs.elmPackages.elm
+    pkgs.elmPackages.elm-format
   ];
 
   programs.git = {
