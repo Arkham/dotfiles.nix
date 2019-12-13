@@ -29,18 +29,20 @@ in {
   home.packages = [
     pkgs.ag
     pkgs.bashCompletion
-    pkgs.nix-bash-completions
     pkgs.bashInteractive
     pkgs.coreutils
     pkgs.direnv
+    pkgs.elmPackages.elm
+    pkgs.elmPackages.elm-format
     pkgs.fortune
     pkgs.git
     pkgs.htop
+    pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.reattach-to-user-namespace
+    pkgs.stack
+    pkgs.tree
     pkgs.watch
-    pkgs.elmPackages.elm
-    pkgs.elmPackages.elm-format
   ];
 
   programs.git = {
