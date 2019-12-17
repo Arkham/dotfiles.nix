@@ -57,6 +57,9 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 ## Load direnv
 has_program direnv && eval "$(direnv hook bash)"
 
+## Load secrets
+safe_source "$HOME/.bashrc.secrets"
+
 ## Utilities
 # go back n directories
 function b {
