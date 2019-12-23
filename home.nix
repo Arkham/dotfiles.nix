@@ -36,6 +36,7 @@ in {
     pkgs.elmPackages.elm-format
     pkgs.fortune
     pkgs.git
+    pkgs.haskellPackages.hindent
     pkgs.htop
     pkgs.nix-bash-completions
     pkgs.nixfmt
