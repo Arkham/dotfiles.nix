@@ -44,6 +44,7 @@ in {
     pkgs.stack
     pkgs.tree
     pkgs.watch
+    pkgs.youtube-dl
   ];
 
   programs.git = {
