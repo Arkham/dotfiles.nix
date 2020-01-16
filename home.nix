@@ -34,12 +34,14 @@ in {
     pkgs.direnv
     pkgs.elmPackages.elm
     pkgs.elmPackages.elm-format
+    pkgs.elmPackages.elm-test
     pkgs.fortune
     pkgs.git
     pkgs.haskellPackages.hindent
     pkgs.htop
     pkgs.nix-bash-completions
     pkgs.nixfmt
+    pkgs.nodejs
     pkgs.reattach-to-user-namespace
     pkgs.stack
     pkgs.tree
