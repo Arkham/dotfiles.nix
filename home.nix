@@ -37,6 +37,7 @@ in {
     pkgs.elmPackages.elm-test
     pkgs.fortune
     pkgs.git
+    pkgs.git-lfs
     pkgs.haskellPackages.hindent
     pkgs.htop
     pkgs.nix-bash-completions
