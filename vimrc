@@ -168,6 +168,9 @@ endif
 " Mappings {{{
 let mapleader=','
 
+" Y u no consistent?
+nnoremap Y y$
+
 " open vimrc and reload it
 nnoremap <Leader>vv :vsplit $HOME/.vimrc<CR>
 nnoremap <Leader>sv :source $HOME/.vimrc<CR>
