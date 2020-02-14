@@ -172,8 +172,8 @@ let mapleader=','
 nnoremap Y y$
 
 " open vimrc and reload it
-nnoremap <Leader>vv :vsplit $HOME/.vimrc<CR>
-nnoremap <Leader>sv :source $HOME/.vimrc<CR>
+nnoremap <Leader>vv :vsplit $HOME/.config/nixpkgs/vimrc<CR>
+nnoremap <Leader>sv :source $HOME/.config/nixpkgs/vimrc<CR>
 
 " disable man page for word under cursor
 nnoremap K <Nop>
