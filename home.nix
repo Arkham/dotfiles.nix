@@ -2,6 +2,7 @@
 
 let
   sources = import ./nix/sources.nix;
+  niv = import sources.niv { };
 
   vimSources =
     lib.filterAttrs (_: source: lib.hasAttrByPath [ "vim" ] source) sources;
@@ -27,6 +28,7 @@ in {
   programs.home-manager.enable = true;
 
   home.packages = [
+    niv.niv
     pkgs.ag
     pkgs.bashCompletion
     pkgs.bashInteractive

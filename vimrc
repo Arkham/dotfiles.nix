@@ -263,7 +263,6 @@ hi ALEError guibg=124 ctermbg=124 gui=NONE cterm=NONE
 
 let g:NERDTreeHighlightCursorline = 0
 let g:NERDTreeMouseMode = 3
-let g:UltiSnipsSnippetsDir = $HOME."/.vim/UltiSnips"
 let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_text_changed = 'never'
