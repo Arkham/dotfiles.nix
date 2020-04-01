@@ -136,4 +136,5 @@ in {
 
   home.file.".inputrc".source = ./inputrc;
   home.file.".gemrc".text = "gem: --no-ri --no-rdoc";
+  home.file.".direnvrc".source = ./direnvrc;
 }
