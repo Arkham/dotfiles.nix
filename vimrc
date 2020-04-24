@@ -294,7 +294,6 @@ let g:neoformat_enabled_ruby = []
 let g:neoformat_only_msg_on_error = 1
 let g:polyglot_disabled = ['json']
 let g:test#preserve_screen = 1
-let g:test#ruby#rspec#executable = "spring rspec"
 let g:test#strategy = "vimux"
 let g:yoinkIncludeDeleteOperations = 1
 let g:yoinkSavePersistently = 1
