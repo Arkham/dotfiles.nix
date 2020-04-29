@@ -40,9 +40,10 @@ in {
     pkgs.fortune
     pkgs.git
     pkgs.git-lfs
-    pkgs.haskellPackages.hindent
     pkgs.htop
     pkgs.jq
+    pkgs.lazygit
+    pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.nodejs
