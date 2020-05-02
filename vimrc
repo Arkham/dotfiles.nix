@@ -292,6 +292,7 @@ let g:neoformat_only_msg_on_error = 1
 let g:polyglot_disabled = ['json']
 let g:test#preserve_screen = 1
 let g:test#strategy = "vimux"
+let g:tmux_navigator_disable_when_zoomed = 1
 let g:yoinkIncludeDeleteOperations = 1
 let g:yoinkSavePersistently = 1
 let g:yoinkSwapClampAtEnds = 0
