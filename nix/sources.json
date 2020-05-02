@@ -51,19 +51,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "gruvbox": {
-        "branch": "master",
-        "description": "Retro groove color scheme for Vim",
-        "homepage": "",
-        "owner": "morhetz",
-        "repo": "gruvbox",
-        "rev": "040138616bec342d5ea94d4db296f8ddca17007a",
-        "sha256": "0qk2mqs04qlxkc1ldgjbiv1yisi2xl2b8svmjz0hdp9y2l5vfccw",
-        "type": "tarball",
-        "url": "https://github.com/morhetz/gruvbox/archive/040138616bec342d5ea94d4db296f8ddca17007a.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "haskell-vim": {
         "branch": "master",
         "description": "Custom Haskell Vimscripts",
@@ -254,6 +241,19 @@
         "sha256": "0jc4i957wlia3m5yq3gpn3bjdfvr8g5k8mhimdf7zasz0szpsjg7",
         "type": "tarball",
         "url": "https://github.com/tpope/vim-fugitive/archive/caf3b1d5696e8d39a905e48f1e89d8c0c565168c.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
+    "vim-gruvbox8": {
+        "branch": "master",
+        "description": "A simplified and optimized Gruvbox colorscheme for Vim",
+        "homepage": null,
+        "owner": "lifepillar",
+        "repo": "vim-gruvbox8",
+        "rev": "05d18a11098417b85cd57f14c4355d7e658de605",
+        "sha256": "1glvpay22b2s2h8f9sgdsyx4shllvfn63ad9av5ihackjccngjic",
+        "type": "tarball",
+        "url": "https://github.com/lifepillar/vim-gruvbox8/archive/05d18a11098417b85cd57f14c4355d7e658de605.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },

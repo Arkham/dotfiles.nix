@@ -15,7 +15,7 @@ set noswapfile                    " and swap files
 
 " Style
 set background=dark
-silent! color gruvbox
+silent! color gruvbox8
 set number                        " line numbers are cool
 set ruler                         " show the cursor position all the time
 set nocursorline                  " disable cursor line
