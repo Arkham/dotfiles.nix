@@ -90,19 +90,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "nerdtree": {
-        "branch": "master",
-        "description": "A tree explorer plugin for vim.",
-        "homepage": "",
-        "owner": "scrooloose",
-        "repo": "nerdtree",
-        "rev": "29a321d061032df5b2ec347b6b4b778f665305a6",
-        "sha256": "08gfmpikxz6j9hymf64fbxd1630x3gvkq72d2dmdfr9an2xxh6zm",
-        "type": "tarball",
-        "url": "https://github.com/scrooloose/nerdtree/archive/29a321d061032df5b2ec347b6b4b778f665305a6.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",

@@ -248,7 +248,6 @@ nnoremap <Leader>m :History<CR>
 nnoremap <silent> <S-left> <Esc>:bp<CR>
 nnoremap <silent> <S-right> <Esc>:bn<CR>
 nnoremap <Leader>a <Esc>:Ag<space>
-nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :MundoToggle<CR>
 nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
 nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
@@ -261,8 +260,6 @@ nmap <C-p> <plug>(YoinkPostPasteSwapForward)
 " Plugins configuration {{{
 hi ALEError guibg=124 ctermbg=124 gui=NONE cterm=NONE
 
-let g:NERDTreeHighlightCursorline = 0
-let g:NERDTreeMouseMode = 3
 let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_text_changed = 'never'
