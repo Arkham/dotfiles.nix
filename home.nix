@@ -51,6 +51,7 @@ in {
     pkgs.stack
     pkgs.tree
     pkgs.watch
+    pkgs.wget
     pkgs.youtube-dl
   ];
 
