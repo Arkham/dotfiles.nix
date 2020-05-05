@@ -11,21 +11,21 @@ function has_program {
 
 ## Fancy prompt
 red='\[\e[0;31m\]'
-RED='\[\e[1;31m\]'
+RED='\[\e[1;91m\]'
 blue='\[\e[0;34m\]'
-BLUE='\[\e[1;34m\]'
+BLUE='\[\e[1;94m\]'
 cyan='\[\e[0;36m\]'
-CYAN='\[\e[1;36m\]'
+CYAN='\[\e[1;96m\]'
 black='\[\e[0;30m\]'
-BLACK='\[\e[1;30m\]'
+BLACK='\[\e[1;90m\]'
 green='\[\e[0;32m\]'
-GREEN='\[\e[1;32m\]'
+GREEN='\[\e[1;92m\]'
 yellow='\[\e[0;33m\]'
-YELLOW='\[\e[1;33m\]'
+YELLOW='\[\e[1;93m\]'
 magenta='\[\e[0;35m\]'
-MAGENTA='\[\e[1;35m\]'
+MAGENTA='\[\e[1;95m\]'
 white='\[\e[0;37m\]'
-WHITE='\[\e[1;37m\]'
+WHITE='\[\e[1;97m\]'
 NC='\[\e[0m\]'
 
 function is_vim_running {
@@ -47,12 +47,12 @@ stty -ixon
 
 ## Colored manpages
 export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;91m'
 export LESS_TERMCAP_me=$'\E[0m'
 export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_so=$'\E[01;44;93m'
 export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
+export LESS_TERMCAP_us=$'\E[01;92m'
 
 ## Load direnv
 has_program direnv && eval "$(direnv hook bash)"
