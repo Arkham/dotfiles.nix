@@ -52,6 +52,7 @@ in {
     pkgs.tree
     pkgs.watch
     pkgs.wget
+    pkgs.yarn
     pkgs.youtube-dl
   ];
 
