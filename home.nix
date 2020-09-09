@@ -29,9 +29,9 @@ in {
 
   home.packages = [
     niv.niv
-    pkgs.ag
     pkgs.bashCompletion
     pkgs.bashInteractive
+    pkgs.bat
     pkgs.coreutils
     pkgs.direnv
     pkgs.elmPackages.elm
@@ -48,6 +48,7 @@ in {
     pkgs.nixfmt
     pkgs.nodejs
     pkgs.reattach-to-user-namespace
+    pkgs.ripgrep
     pkgs.stack
     pkgs.tree
     pkgs.watch
@@ -86,7 +87,8 @@ in {
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
-    defaultCommand = "ag -g ''";
+    defaultCommand = "rg --files --hidden --follow";
+    defaultOptions = [ "-m --bind ctrl-a:select-all,ctrl-d:deselect-all" ];
   };
 
   programs.bash = {
@@ -99,6 +101,7 @@ in {
       RUBY_CONFIGURE_OPTS = "--disable-install-doc";
       ERL_AFLAGS = "-kernel shell_history enabled";
       SHELL = "${pkgs.bashInteractive}/bin/bash";
+      BAT_THEME = "OneHalfDark";
     };
     shellAliases = {
       ls = "ls -hF --color";

@@ -216,8 +216,8 @@ nnoremap <Leader>cc :w\|:!gcc % -Wall && ./a.out<CR>
 nnoremap <silent> <Leader>ce :w\|:!elm make Main.elm --output app.js<CR>
 
 " easy global search
-nnoremap <C-S> :Ag <C-R><C-W><CR>
-vnoremap <C-S> y<Esc>:Ag <C-R>"<CR>
+nnoremap <C-S> :Rg <C-R><C-W><CR>
+vnoremap <C-S> y<Esc>:Rg <C-R>"<CR>
 
 " easier navigation between split windows
 nnoremap <C-J> <C-W>j
@@ -247,7 +247,7 @@ nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>m :History<CR>
 nnoremap <silent> <S-left> <Esc>:bp<CR>
 nnoremap <silent> <S-right> <Esc>:bn<CR>
-nnoremap <Leader>a <Esc>:Ag<space>
+nnoremap <Leader>a <Esc>:Rg<space>
 nnoremap <Leader>u :MundoToggle<CR>
 nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
 nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
@@ -297,16 +297,3 @@ let g:yoinkIncludeDeleteOperations = 1
 let g:yoinkSavePersistently = 1
 let g:yoinkSwapClampAtEnds = 0
 " }}}
-
-command! -bang -nargs=* Ag
-  \ call fzf#vim#ag(<q-args>,
-  \                 <bang>0 ? fzf#vim#with_preview({ 'options': '--bind ctrl-a:select-all,ctrl-d:deselect-all' }, 'up:60%')
-  \                         : fzf#vim#with_preview({ 'options': '--bind ctrl-a:select-all,ctrl-d:deselect-all' }, 'right:50%:hidden', '?'),
-  \                 <bang>0)
-
-" bindings for fuzzy-finding
-nnoremap <silent> <C-e> :call fzf#run(fzf#wrap({
-  \ "source": "git ls-files --others --cached --exclude-standard \| similar-sort " . @%,
-  \ "sink": "edit",
-  \ "options": "--tiebreak index"
-  \ }))<CR>
