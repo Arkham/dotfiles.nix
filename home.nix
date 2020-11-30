@@ -47,7 +47,7 @@ in {
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
-    pkgs.nodejs
+    pkgs.nodejs-13_x
     pkgs.reattach-to-user-namespace
     pkgs.ripgrep
     pkgs.stack

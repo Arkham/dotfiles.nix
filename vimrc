@@ -261,9 +261,10 @@ nmap <C-p> <plug>(YoinkPostPasteSwapForward)
 hi ALEError guibg=124 ctermbg=124 gui=NONE cterm=NONE
 
 let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
+let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false } }
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters = { 'haskell': ['hlint', 'hie'], 'elixir': ['elixir-ls'] }
+let g:ale_linters = { 'haskell': ['hlint'], 'elixir': ['elixir-ls'] }
 let g:fzf_layout = { 'down': '~30%' }
 let g:goldenview__enable_default_mapping = 0
 let g:haskell_indent_after_bare_where = 2
