@@ -57,6 +57,10 @@ export LESS_TERMCAP_us=$'\E[01;92m'
 ## Load direnv
 has_program direnv && eval "$(direnv hook bash)"
 
+## Load asdf
+safe_source "$HOME/.asdf/asdf.sh"
+safe_source "$HOME/.asdf/completions/asdf.bash"
+
 ## Load secrets
 safe_source "$HOME/.bashrc.secrets"
 
