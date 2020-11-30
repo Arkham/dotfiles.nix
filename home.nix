@@ -40,6 +40,7 @@ in {
     pkgs.fortune
     pkgs.git
     pkgs.git-lfs
+    pkgs.gnused
     pkgs.htop
     pkgs.jq
     pkgs.lazygit
