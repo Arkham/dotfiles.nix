@@ -136,7 +136,7 @@ in {
     viAlias = true;
     vimAlias = true;
     plugins = (lib.mapAttrsToList (_: plugin: plugin) vimPlugins)
-      ++ [ pkgs.fzf ];
+      ++ [ pkgs.vimPlugins.fzf-vim ];
     extraConfig = builtins.readFile ./vimrc;
   };
 

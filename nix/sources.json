@@ -51,19 +51,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "fzf.vim": {
-        "branch": "master",
-        "description": "fzf :heart: vim",
-        "homepage": "",
-        "owner": "junegunn",
-        "repo": "fzf.vim",
-        "rev": "2c07630341de7e4d8f85acf1e44d9b8ce8e5e48b",
-        "sha256": "0zci99xbbd7gg12qs5zma0gapc21gy3mzzbvd12mdr2zcad59vx3",
-        "type": "tarball",
-        "url": "https://github.com/junegunn/fzf.vim/archive/2c07630341de7e4d8f85acf1e44d9b8ce8e5e48b.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "haskell-vim": {
         "branch": "master",
         "description": "Custom Haskell Vimscripts",
