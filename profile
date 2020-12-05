@@ -5,4 +5,4 @@ export XDG_DATA_DIRS="$HOME/.nix-profile/share:${XDG_DATA_DIRS:-/usr/local/share
 
 . "$HOME/.nix-profile/etc/profile.d/nix.sh"
 . "$HOME/.nix-profile/etc/profile.d/bash_completion.sh"
-. "$HOME/.nix-profile/etc/bash_completion.d/git-prompt.sh"
+. "$HOME/.nix-profile/share/git/contrib/completion/git-prompt.sh"
