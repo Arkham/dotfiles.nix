@@ -141,15 +141,22 @@ if has("autocmd")
   if has('nvim')
     augroup terminal_numbers
       au!
-      autocmd TermOpen * setlocal nonumber
+      au TermOpen * setlocal nonumber
     augroup END
   endif
 
-  " Run all formatters
+  " run all formatters
   augroup fmt
-    autocmd!
-    autocmd BufWritePre * Neoformat
+    au!
+    au BufWritePre * Neoformat
   augroup END
+
+  " fold multiline haskell comments
+  augroup haskell_comments
+    au!
+    au FileType haskell setlocal foldmethod=marker foldmarker={-,-}
+  augroup END
+
 
   " remember last location in file, but not for commit messages,
   " or when the position is invalid or inside an event handler,
