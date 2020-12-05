@@ -24,6 +24,11 @@ let
       # don't run the Makefile
       buildPhase = "true";
     });
+
+    "vim-polyglot" = vimUnpatched.vim-polyglot.overrideAttrs (attrs: {
+      # don't run the Makefile
+      buildPhase = "true";
+    });
   };
 in {
   programs.home-manager.enable = true;

@@ -276,10 +276,10 @@
         "homepage": "",
         "owner": "sheerun",
         "repo": "vim-polyglot",
-        "rev": "0a7c62b3b22a75f91245a718c1409e4216ae61c8",
-        "sha256": "0kd8nr9s3sfa87n65hxq1rcfpci3pwyy6ygw77pcxk5v6vs1l8gc",
+        "rev": "73c518717741fb3ebb6822645d38f37ffae7c19b",
+        "sha256": "08zwvnlg08v3h04iw754wl9wkirqcvqip86hh4m7bxxl0qkysnv6",
         "type": "tarball",
-        "url": "https://github.com/sheerun/vim-polyglot/archive/0a7c62b3b22a75f91245a718c1409e4216ae61c8.tar.gz",
+        "url": "https://github.com/sheerun/vim-polyglot/archive/73c518717741fb3ebb6822645d38f37ffae7c19b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
