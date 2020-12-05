@@ -281,12 +281,13 @@ let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
 let g:loaded_python_provider = 1
 let g:miniyank_filename = $HOME."/.vim/.miniyank.mpack"
 let g:mundo_right = 1
-let g:neoformat_enabled_json = []
 let g:neoformat_nix_nixfmt = {
   \ 'exe': 'nixfmt',
   \ 'args': ['--width', '80'],
   \ 'stdin': 1,
   \ }
+let g:neoformat_enabled_haskell = ['ormolu']
+let g:neoformat_enabled_json = []
 let g:neoformat_enabled_nix = ['nixfmt']
 let g:neoformat_enabled_ruby = []
 let g:neoformat_only_msg_on_error = 1
