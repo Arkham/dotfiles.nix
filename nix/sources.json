@@ -38,19 +38,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "coc.nvim": {
-        "branch": "release",
-        "description": "Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode ",
-        "homepage": "",
-        "owner": "neoclide",
-        "repo": "coc.nvim",
-        "rev": "586790276ceeb4d6bda8a23e846177cbf6313897",
-        "sha256": "02libgk8nv4kc20fy9y5p6nq596rpcvg9wyy5z87hxgkhfgdndsa",
-        "type": "tarball",
-        "url": "https://github.com/neoclide/coc.nvim/archive/586790276ceeb4d6bda8a23e846177cbf6313897.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "haskell-vim": {
         "branch": "master",
         "description": "Custom Haskell Vimscripts",
