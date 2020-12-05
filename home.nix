@@ -1,8 +1,9 @@
-{ pkgs, lib, ... }:
+{ lib, ... }:
 
 let
   sources = import ./nix/sources.nix;
   niv = import sources.niv { };
+  pkgs = import sources.nixpkgs { };
 
   vimSources =
     lib.filterAttrs (_: source: lib.hasAttrByPath [ "vim" ] source) sources;
@@ -47,7 +48,7 @@ in {
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
-    pkgs.nodejs-13_x
+    pkgs.nodejs-14_x
     pkgs.reattach-to-user-namespace
     pkgs.ripgrep
     pkgs.stack
