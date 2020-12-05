@@ -44,7 +44,6 @@ in {
     pkgs.elmPackages.elm-format
     pkgs.elmPackages.elm-test
     pkgs.fortune
-    pkgs.git
     pkgs.git-lfs
     pkgs.gnused
     pkgs.htop
@@ -66,6 +65,7 @@ in {
 
   programs.git = {
     enable = true;
+    package = pkgs.gitAndTools.gitFull;
     userName = "Ju Liu";
     userEmail = "ju@noredink.com";
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
