@@ -287,7 +287,6 @@ let g:haskell_indent_where = 6
 let g:hdevtools_stack = 1
 let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
 let g:loaded_python_provider = 1
-let g:miniyank_filename = $HOME."/.vim/.miniyank.mpack"
 let g:mundo_right = 1
 let g:neoformat_nix_nixfmt = {
   \ 'exe': 'nixfmt',
