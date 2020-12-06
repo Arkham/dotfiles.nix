@@ -12,6 +12,7 @@ set autoread                      " auto load files if vim detects change
 set autowrite                     " auto write files when moving around
 set nobackup                      " disable backup files...
 set noswapfile                    " and swap files
+set shortmess=I                   " disable intro message
 
 " Style
 set background=dark
