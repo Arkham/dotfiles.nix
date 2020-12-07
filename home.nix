@@ -31,6 +31,8 @@ let
     });
   };
 in {
+  nixpkgs.overlays = [ (final: previous: { fzf = pkgs.fzf; }) ];
+
   programs.home-manager.enable = true;
 
   home.packages = [
