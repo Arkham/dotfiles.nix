@@ -54,7 +54,6 @@ in {
     pkgs.gnused
     pkgs.htop
     pkgs.jq
-    pkgs.lazygit
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
