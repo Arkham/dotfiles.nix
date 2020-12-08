@@ -51,7 +51,6 @@ in {
     pkgs.elmPackages.elm-format
     pkgs.elmPackages.elm-test
     pkgs.fortune
-    pkgs.git-lfs
     pkgs.gnused
     pkgs.htop
     pkgs.jq
@@ -76,6 +75,8 @@ in {
     userName = "Ju Liu";
     userEmail = "ju@noredink.com";
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
+    extraConfig = { pull = { ff = "only"; }; };
+    lfs = { enable = true; };
     aliases = {
       ci = "commit";
       co = "checkout";
