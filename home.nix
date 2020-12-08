@@ -31,7 +31,13 @@ let
     });
   };
 in {
-  nixpkgs.overlays = [ (final: previous: { fzf = pkgs.fzf; }) ];
+  nixpkgs.overlays = [
+    (final: previous: {
+      fzf = pkgs.fzf;
+      direnv = pkgs.direnv;
+      nix-direnv = pkgs.nix-direnv;
+    })
+  ];
 
   programs.home-manager.enable = true;
 
@@ -41,7 +47,6 @@ in {
     pkgs.bashInteractive
     pkgs.bat
     pkgs.coreutils
-    pkgs.direnv
     pkgs.elmPackages.elm
     pkgs.elmPackages.elm-format
     pkgs.elmPackages.elm-test
@@ -149,7 +154,12 @@ in {
     extraConfig = builtins.readFile ./tmux.conf;
   };
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableNixDirenvIntegration = true;
+  };
+
   home.file.".inputrc".source = ./inputrc;
   home.file.".gemrc".text = "gem: --no-ri --no-rdoc";
-  home.file.".direnvrc".source = ./direnvrc;
 }
