@@ -31,14 +31,6 @@ let
     });
   };
 in {
-  nixpkgs.overlays = [
-    (final: previous: {
-      fzf = pkgs.fzf;
-      direnv = pkgs.direnv;
-      nix-direnv = pkgs.nix-direnv;
-    })
-  ];
-
   programs.home-manager.enable = true;
 
   home.packages = [
