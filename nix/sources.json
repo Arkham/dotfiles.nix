@@ -70,10 +70,10 @@
         "homepage": "",
         "owner": "sbdchd",
         "repo": "neoformat",
-        "rev": "7e458dafae64b7f14f8c2eaecb886b7a85b8f66d",
-        "sha256": "00x6yx4y4m45p3silwz084scs1a602d4xazyr39lgc0ssv6d9jhv",
+        "rev": "c1d63f047c2fc1dba638a80c24d9b9b44ceb9f50",
+        "sha256": "1q92lxdy8mgiv3ffp2gxsf0acp98hk3yh3lkvsaj6crdwbrq1ss9",
         "type": "tarball",
-        "url": "https://github.com/sbdchd/neoformat/archive/7e458dafae64b7f14f8c2eaecb886b7a85b8f66d.tar.gz",
+        "url": "https://github.com/sbdchd/neoformat/archive/c1d63f047c2fc1dba638a80c24d9b9b44ceb9f50.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },

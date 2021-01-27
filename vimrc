@@ -88,12 +88,6 @@ if has("autocmd")
     au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
   augroup END
 
-  " treat JSON files like JavaScript
-  augroup filetype_json
-    au!
-    au BufNewFile,BufRead *.json setf javascript
-  augroup END
-
   " disable endwise for anonymous functions
   augroup filetype_elixir_endwise
     au!
