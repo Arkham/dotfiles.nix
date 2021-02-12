@@ -114,6 +114,19 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
+    "splitjoin.vim": {
+        "branch": "main",
+        "description": "Switch between single-line and multiline forms of code",
+        "homepage": "http://www.vim.org/scripts/script.php?script_id=3613",
+        "owner": "AndrewRadev",
+        "repo": "splitjoin.vim",
+        "rev": "e603ae3579214825ccef57f3b9c597a50f088b3e",
+        "sha256": "08hgf46pywvxyp45ixyyjx7i07bzpq8132mfwgjnsr2m4fi50x1a",
+        "type": "tarball",
+        "url": "https://github.com/AndrewRadev/splitjoin.vim/archive/e603ae3579214825ccef57f3b9c597a50f088b3e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
     "supertab": {
         "branch": "master",
         "description": "Perform all your vim insert mode completions with Tab",
