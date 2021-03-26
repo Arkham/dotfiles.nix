@@ -90,15 +90,15 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
-        "branch": "release-20.09",
+        "branch": "nixpkgs-20.09-darwin",
         "description": "Nix Packages collection",
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2132156eeb26908afed15766b94ba6c56c5d4d10",
-        "sha256": "0bic9cwf9i4qxi7q5zzxrvl04rarb29iywvf2nm0hf2zmv2pnbin",
+        "rev": "d395190b24b27a65588f4539c423d9807ad8d4e7",
+        "sha256": "0r1kj8gf97z9ydh36vmgrar1q4l9ggaqiygxjvp8jmr1948y0nh2",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/2132156eeb26908afed15766b94ba6c56c5d4d10.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/d395190b24b27a65588f4539c423d9807ad8d4e7.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "quickfix-reflector.vim": {
