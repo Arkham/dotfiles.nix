@@ -300,4 +300,16 @@ let g:tmux_navigator_disable_when_zoomed = 1
 let g:yoinkIncludeDeleteOperations = 1
 let g:yoinkSavePersistently = 1
 let g:yoinkSwapClampAtEnds = 0
+
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+      \ 'ctrl-q': function('s:build_quickfix_list'),
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-x': 'split',
+      \ 'ctrl-v': 'vsplit' }
 " }}}

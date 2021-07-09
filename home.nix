@@ -47,6 +47,7 @@ in {
     pkgs.htop
     pkgs.jq
     pkgs.libiconv
+    pkgs.ncdu
     pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.nodejs-12_x
@@ -61,7 +62,6 @@ in {
 
   programs.git = {
     enable = true;
-    package = pkgs.gitAndTools.gitFull;
     userName = "Ju Liu";
     userEmail = "ju@noredink.com";
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
@@ -148,7 +148,7 @@ in {
   programs.direnv = {
     enable = true;
     enableBashIntegration = true;
-    enableNixDirenvIntegration = true;
+    nix-direnv.enable = true;
   };
 
   home.file.".inputrc".source = ./inputrc;
