@@ -51,6 +51,19 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
+    "idris-vim": {
+        "branch": "master",
+        "description": "Idris mode for vim",
+        "homepage": null,
+        "owner": "idris-hackers",
+        "repo": "idris-vim",
+        "rev": "091ed6b267749927777423160eeab520109dd9c1",
+        "sha256": "1zibar2vxcmai0k37ricwnimfdv1adxfbbvz871rc4l6h3q85if1",
+        "type": "tarball",
+        "url": "https://github.com/idris-hackers/idris-vim/archive/091ed6b267749927777423160eeab520109dd9c1.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
     "lightline.vim": {
         "branch": "master",
         "description": "A light and configurable statusline/tabline plugin for Vim",
