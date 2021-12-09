@@ -108,10 +108,10 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ebf419e737bb8154b32010a322dcdffbea596443",
-        "sha256": "148l27lnhw1gsi64z8fkx9q7y112dgar99igyswp4aksg7iaqrpf",
+        "rev": "e1e72d029c0b8e379e14c2bfc7dd36f7b747fb2b",
+        "sha256": "1cm2xzahqas63gvxy953yywjyddvygcw24ml8gchlidwnjhg3j8j",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/ebf419e737bb8154b32010a322dcdffbea596443.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/e1e72d029c0b8e379e14c2bfc7dd36f7b747fb2b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "quickfix-reflector.vim": {
