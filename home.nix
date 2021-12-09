@@ -53,6 +53,7 @@ in {
     pkgs.nodejs-12_x
     pkgs.ripgrep
     pkgs.stack
+    pkgs.tmate
     pkgs.tree
     pkgs.watch
     pkgs.wget
