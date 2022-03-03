@@ -87,6 +87,7 @@ in {
       as = "update-index --assume-unchanged";
       nas = "update-index --no-assume-unchanged";
       al = "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'";
+      pub = "push -u origin HEAD";
     };
   };
 

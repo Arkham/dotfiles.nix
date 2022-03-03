@@ -239,7 +239,7 @@ nnoremap <Leader>gd  :Gdiff<CR>
 nnoremap <Leader>gci :Gcommit<CR>
 nnoremap <Leader>gw  :Gwrite<CR>
 nnoremap <Leader>gr  :Gread<CR>
-nnoremap <Leader>gb  :Gblame<CR>
+nnoremap <Leader>gb  :Git blame<CR>
 
 " Plugins mapping
 nnoremap <Leader>w :ALEDetail<CR>
