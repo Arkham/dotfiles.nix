@@ -31,10 +31,10 @@
         "homepage": "",
         "owner": "w0rp",
         "repo": "ale",
-        "rev": "b9744076a1603b37bc861e1aa885bbc052e0ed63",
-        "sha256": "1hwzsqva1hjsm21hf5ynd46gxbhgh327mynf5gcn178dbna0z8dz",
+        "rev": "091592bfb09e7e994bd860fa3776e8cf4346bf5a",
+        "sha256": "1slnzq97r6ns1984kf88ry9g1hk0cv168p0nx6s6hy9nh4mnjr4j",
         "type": "tarball",
-        "url": "https://github.com/w0rp/ale/archive/b9744076a1603b37bc861e1aa885bbc052e0ed63.tar.gz",
+        "url": "https://github.com/w0rp/ale/archive/091592bfb09e7e994bd860fa3776e8cf4346bf5a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
@@ -108,10 +108,10 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ff17a0fffea0c021541ecc72a43c1079eea0599c",
-        "sha256": "09bldf3lcn3ql18q6w113zd876fmabh61k3jifg0n6m8dn192svl",
+        "rev": "ed02c2ba0384b2800db41333045a6fb781f12aac",
+        "sha256": "040rawxqbpblxpsq73qxlk25my2cm0g3gx1pksiacsj15q5fi84q",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/ff17a0fffea0c021541ecc72a43c1079eea0599c.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/ed02c2ba0384b2800db41333045a6fb781f12aac.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "quickfix-reflector.vim": {
