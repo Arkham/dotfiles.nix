@@ -31,6 +31,9 @@ let
     });
   };
 in {
+  home.username = "arkham";
+  home.homeDirectory = "/Users/arkham";
+  home.stateVersion = "21.11";
   programs.home-manager.enable = true;
 
   home.packages = [
@@ -64,7 +67,7 @@ in {
   programs.git = {
     enable = true;
     userName = "Ju Liu";
-    userEmail = "ju@noredink.com";
+    userEmail = "liuju86@gmail.com";
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
     extraConfig = { pull = { ff = "only"; }; };
     lfs = { enable = true; };
