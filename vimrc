@@ -1,7 +1,7 @@
 " General settings {{{
 set encoding=utf-8
 set t_Co=256                      " moar colors
-set clipboard=unnamed             " use system clipboard
+set clipboard=unnamedplus         " use system clipboard
 set nocompatible                  " nocompatible is good for humans
 syntax enable                     " enable syntax highlighting...
 filetype plugin indent on         " depending on filetypes...
