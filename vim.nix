@@ -33,6 +33,7 @@ in {
     enable = true;
     viAlias = true;
     vimAlias = true;
+    withRuby = false;
     plugins = (lib.mapAttrsToList (_: plugin: plugin) vimPlugins)
       ++ [ pkgs.vimPlugins.fzf-vim ];
     extraConfig = builtins.readFile ./vimrc;
