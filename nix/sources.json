@@ -90,18 +90,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "niv": {
-        "branch": "master",
-        "description": "Easy dependency management for Nix projects",
-        "homepage": "https://github.com/nmattia/niv",
-        "owner": "nmattia",
-        "repo": "niv",
-        "rev": "5912c378c2f87e911f1bc7236202f69581406c9d",
-        "sha256": "1jhs562k3pk0xgwyf0m1h2bck4rivv9f3aznz8dslgby9g5mdnda",
-        "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/5912c378c2f87e911f1bc7236202f69581406c9d.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "nixpkgs": {
         "branch": "nixpkgs-21.11-darwin",
         "description": "Nix Packages collection",
