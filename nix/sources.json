@@ -139,6 +139,19 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
+    "shadowenv.vim": {
+        "branch": "master",
+        "description": "Shadowenv integration for Vim",
+        "homepage": "",
+        "owner": "Arkham",
+        "repo": "shadowenv.vim",
+        "rev": "6422c3a651c3788881d01556cb2a90bdff7bf002",
+        "sha256": "1lfckdxkd9cl0bagcxwfg0gb84bs2sxxscrwd86yrqyhrvm24hik",
+        "type": "tarball",
+        "url": "https://github.com/Arkham/shadowenv.vim/archive/6422c3a651c3788881d01556cb2a90bdff7bf002.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
     "splitjoin.vim": {
         "branch": "main",
         "description": "Switch between single-line and multiline forms of code",
