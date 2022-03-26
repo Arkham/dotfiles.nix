@@ -233,89 +233,93 @@ nnoremap <Right> :echo "no!"<CR>
 nnoremap <Up>    :echo "no!"<CR>
 nnoremap <Down>  :echo "no!"<CR>
 
-" Fugitive
-nnoremap <Leader>gs  :Gstatus<CR>
-nnoremap <Leader>gd  :Gdiff<CR>
-nnoremap <Leader>gci :Gcommit<CR>
-nnoremap <Leader>gw  :Gwrite<CR>
-nnoremap <Leader>gr  :Gread<CR>
-nnoremap <Leader>gb  :Git blame<CR>
+" Plugins {{{
+if exists('g:vscode')
+  xnoremap gc  <Plug>VSCodeCommentary
+  nnoremap gc  <Plug>VSCodeCommentary
+  onoremap gc  <Plug>VSCodeCommentary
+  nnoremap gcc <Plug>VSCodeCommentaryLine
+  nnoremap <Leader>f :call VSCodeNotify("workbench.action.quickOpen")<CR>
+else
+  nnoremap <Leader>gs  :Gstatus<CR>
+  nnoremap <Leader>gd  :Gdiff<CR>
+  nnoremap <Leader>gci :Gcommit<CR>
+  nnoremap <Leader>gw  :Gwrite<CR>
+  nnoremap <Leader>gr  :Gread<CR>
+  nnoremap <Leader>gb  :Git blame<CR>
+  nnoremap <Leader>w :ALEDetail<CR>
+  nnoremap <Leader>x :ALENextWrap<CR>
+  nnoremap <Leader>dd :ALEGoToDefinition<CR>
+  nnoremap <Leader>dt :ALEGoToTypeDefinition<CR>
+  nnoremap <Leader>f :Files<CR>
+  nnoremap <Leader>b :Buffers<CR>
+  nnoremap <Leader>m :History<CR>
+  nnoremap <silent> <S-left> <Esc>:bp<CR>
+  nnoremap <silent> <S-right> <Esc>:bn<CR>
+  nnoremap <Leader>a <Esc>:Rg<space>
+  nnoremap <Leader>u :MundoToggle<CR>
+  nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
+  nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
+  nmap p <plug>(YoinkPaste_p)
+  nmap P <plug>(YoinkPaste_P)
+  nmap <C-n> <plug>(YoinkPostPasteSwapBack)
+  nmap <C-p> <plug>(YoinkPostPasteSwapForward)
 
-" Plugins mapping
-nnoremap <Leader>w :ALEDetail<CR>
-nnoremap <Leader>x :ALENextWrap<CR>
-nnoremap <Leader>dd :ALEGoToDefinition<CR>
-nnoremap <Leader>dt :ALEGoToTypeDefinition<CR>
-nnoremap <Leader>f :Files<CR>
-nnoremap <Leader>b :Buffers<CR>
-nnoremap <Leader>m :History<CR>
-nnoremap <silent> <S-left> <Esc>:bp<CR>
-nnoremap <silent> <S-right> <Esc>:bn<CR>
-nnoremap <Leader>a <Esc>:Rg<space>
-nnoremap <Leader>u :MundoToggle<CR>
-nnoremap <Leader>t :wa<CR>\|:TestFile<CR>
-nnoremap <Leader>T :wa<CR>\|:TestNearest<CR>
-nmap p <plug>(YoinkPaste_p)
-nmap P <plug>(YoinkPaste_P)
-nmap <C-n> <plug>(YoinkPostPasteSwapBack)
-nmap <C-p> <plug>(YoinkPostPasteSwapForward)
-" }}
+  hi ALEError guibg=124 ctermbg=124 gui=NONE cterm=NONE
 
-" Plugins configuration {{{
-hi ALEError guibg=124 ctermbg=124 gui=NONE cterm=NONE
+  let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
+  let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false } }
+  let g:ale_haskell_hie_executable = "haskell-language-server-wrapper"
+  let g:ale_lint_on_insert_leave = 0
+  let g:ale_lint_on_text_changed = 'never'
+  let g:ale_linters = {
+        \ 'haskell': ['hlint', 'hie', 'ormolu'],
+        \ 'elixir': ['elixir-ls'],
+        \ 'ruby': ['solargraph', 'sorbet', 'ruby', 'rubocop'],
+        \ 'nix': [],
+        \ 'elm': ['make'] }
+  let g:fzf_layout = { 'down': '~30%' }
+  let g:goldenview__enable_default_mapping = 0
+  let g:haskell_indent_after_bare_where = 2
+  let g:haskell_indent_before_where = 2
+  let g:haskell_indent_case = 2
+  let g:haskell_indent_case_alternative = 1
+  let g:haskell_indent_do = 3
+  let g:haskell_indent_if = 3
+  let g:haskell_indent_in = 1
+  let g:haskell_indent_let = 4
+  let g:haskell_indent_where = 6
+  let g:hdevtools_stack = 1
+  let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
+  let g:loaded_python_provider = 1
+  let g:mundo_right = 1
+  let g:neoformat_nix_nixfmt = {
+    \ 'exe': 'nixfmt',
+    \ 'args': ['--width', '80'],
+    \ 'stdin': 1,
+    \ }
+  let g:neoformat_enabled_haskell = ['ormolu']
+  let g:neoformat_enabled_json = []
+  let g:neoformat_enabled_nix = ['nixfmt']
+  let g:neoformat_enabled_ruby = []
+  let g:neoformat_only_msg_on_error = 1
+  let g:test#preserve_screen = 1
+  let g:test#strategy = "vimux"
+  let g:tmux_navigator_disable_when_zoomed = 1
+  let g:yoinkIncludeDeleteOperations = 1
+  let g:yoinkSavePersistently = 1
+  let g:yoinkSwapClampAtEnds = 0
 
-let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
-let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false } }
-let g:ale_haskell_hie_executable = "haskell-language-server-wrapper"
-let g:ale_lint_on_insert_leave = 0
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters = {
-      \ 'haskell': ['hlint', 'hie', 'ormolu'],
-      \ 'elixir': ['elixir-ls'],
-      \ 'ruby': ['solargraph', 'sorbet', 'ruby', 'rubocop'],
-      \ 'nix': [],
-      \ 'elm': ['make'] }
-let g:fzf_layout = { 'down': '~30%' }
-let g:goldenview__enable_default_mapping = 0
-let g:haskell_indent_after_bare_where = 2
-let g:haskell_indent_before_where = 2
-let g:haskell_indent_case = 2
-let g:haskell_indent_case_alternative = 1
-let g:haskell_indent_do = 3
-let g:haskell_indent_if = 3
-let g:haskell_indent_in = 1
-let g:haskell_indent_let = 4
-let g:haskell_indent_where = 6
-let g:hdevtools_stack = 1
-let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
-let g:loaded_python_provider = 1
-let g:mundo_right = 1
-let g:neoformat_nix_nixfmt = {
-  \ 'exe': 'nixfmt',
-  \ 'args': ['--width', '80'],
-  \ 'stdin': 1,
-  \ }
-let g:neoformat_enabled_haskell = ['ormolu']
-let g:neoformat_enabled_json = []
-let g:neoformat_enabled_nix = ['nixfmt']
-let g:neoformat_enabled_ruby = []
-let g:neoformat_only_msg_on_error = 1
-let g:test#preserve_screen = 1
-let g:test#strategy = "vimux"
-let g:tmux_navigator_disable_when_zoomed = 1
-let g:yoinkIncludeDeleteOperations = 1
-let g:yoinkSavePersistently = 1
-let g:yoinkSwapClampAtEnds = 0
+  function! s:build_quickfix_list(lines)
+    call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+    copen
+    cc
+  endfunction
 
-function! s:build_quickfix_list(lines)
-  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
-  copen
-  cc
-endfunction
-
-let g:fzf_action = {
-      \ 'ctrl-q': function('s:build_quickfix_list'),
-      \ 'ctrl-t': 'tab split',
-      \ 'ctrl-x': 'split',
-      \ 'ctrl-v': 'vsplit' }
+  let g:fzf_action = {
+        \ 'ctrl-q': function('s:build_quickfix_list'),
+        \ 'ctrl-t': 'tab split',
+        \ 'ctrl-x': 'split',
+        \ 'ctrl-v': 'vsplit' }
+endif
 " }}}
