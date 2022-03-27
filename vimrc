@@ -211,12 +211,6 @@ command! KillControlM :normal :%s/<C-V><C-M>//e<CR><C-O><CR>
 nnoremap <Leader>kw :KillWhitespace<CR>
 nnoremap <Leader>kcm :KillControlM<CR>
 
-" compile c programs
-nnoremap <Leader>cc :w\|:!gcc % -Wall && ./a.out<CR>
-
-" compile example elm program
-nnoremap <silent> <Leader>ce :w\|:!elm make Main.elm --output app.js<CR>
-
 " easy global search
 nnoremap <C-S> :Rg <C-R><C-W><CR>
 vnoremap <C-S> y<Esc>:Rg <C-R>"<CR>
