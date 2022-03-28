@@ -2,10 +2,12 @@
 
 let
   sources = import ./nix/sources.nix;
+  niv = import sources.niv { };
   pkgs = import sources.nixpkgs { };
   pkgs-unstable = import sources.nixpkgs-unstable { };
 in {
   home.packages = [
+    niv.niv
     pkgs-unstable.comma
     pkgs.bashCompletion
     pkgs.bashInteractive
@@ -21,7 +23,6 @@ in {
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
-    pkgs.niv
     pkgs.nodejs
     pkgs.ripgrep
     pkgs.shadowenv
