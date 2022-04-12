@@ -56,6 +56,11 @@ in {
     nix-direnv.enable = true;
   };
 
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   home.file.".inputrc".source = ./inputrc;
   home.file.".gemrc".text = "gem: --no-ri --no-rdoc";
 }
