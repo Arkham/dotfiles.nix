@@ -23,8 +23,8 @@ in {
       BAT_THEME = "OneHalfDark";
     };
     shellAliases = {
-      ls = "ls -hF --color";
-      la = "ls -lA";
+      ls = "exa -F";
+      la = "exa -la";
       rm = "rm -i";
       mv = "mv -i";
       cp = "cp -i";
@@ -55,6 +55,13 @@ in {
     enableBashIntegration = true;
     nix-direnv.enable = true;
   };
+
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
+  programs.exa = { enable = true; };
 
   home.file.".inputrc".source = ./inputrc;
   home.file.".gemrc".text = "gem: --no-ri --no-rdoc";
