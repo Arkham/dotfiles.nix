@@ -6,6 +6,7 @@
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
     extraConfig = { pull = { ff = "only"; }; };
     lfs = { enable = true; };
+    delta = { enable = true; };
     aliases = {
       ci = "commit";
       co = "checkout";
