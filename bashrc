@@ -61,6 +61,15 @@ has_program direnv && eval "$(direnv hook bash)"
 safe_source "$HOME/.asdf/asdf.sh"
 safe_source "$HOME/.asdf/completions/asdf.bash"
 
+# chruby support
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+
+# homebrew support
+[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
+# dev support
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
 ## Load secrets
 safe_source "$HOME/.bashrc.secrets"
 
