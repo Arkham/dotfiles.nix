@@ -141,17 +141,18 @@ if has("autocmd")
   endif
 
   " run all formatters
-  augroup fmt
-    au!
-    au BufWritePre * Neoformat
-  augroup END
+  if !exists('g:vscode')
+    augroup fmt
+      au!
+      au BufWritePre * Neoformat
+    augroup END
+  endif
 
   " fold multiline haskell comments
   augroup haskell_comments
     au!
     au FileType haskell setlocal foldmethod=marker foldmarker={-,-}
   augroup END
-
 
   " remember last location in file, but not for commit messages,
   " or when the position is invalid or inside an event handler,
@@ -229,10 +230,6 @@ nnoremap <Down>  :echo "no!"<CR>
 
 " Plugins {{{
 if exists('g:vscode')
-  xnoremap gc  <Plug>VSCodeCommentary
-  nnoremap gc  <Plug>VSCodeCommentary
-  onoremap gc  <Plug>VSCodeCommentary
-  nnoremap gcc <Plug>VSCodeCommentaryLine
   nnoremap <Leader>f :call VSCodeNotify("workbench.action.quickOpen")<CR>
 else
   nnoremap <Leader>gs  :Gstatus<CR>
