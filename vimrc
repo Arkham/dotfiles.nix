@@ -140,31 +140,31 @@ if has("autocmd")
     augroup END
   endif
 
-  " run all formatters
-  if !exists('g:vscode')
-    augroup fmt
-      au!
-      au BufWritePre * Neoformat
-    augroup END
-  endif
-
   " fold multiline haskell comments
   augroup haskell_comments
     au!
     au FileType haskell setlocal foldmethod=marker foldmarker={-,-}
   augroup END
 
-  " remember last location in file, but not for commit messages,
-  " or when the position is invalid or inside an event handler,
-  " or when the mark is in the first line, that is the default
-  " position when opening a file. See :help last-position-jump
-  augroup last_position
-    au!
-    au BufReadPost *
-      \ if &filetype !~ '^git\c' && line("'\"") > 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-  augroup END
+  " run all formatters
+  if !exists('g:vscode')
+    augroup fmt
+      au!
+      au BufWritePre * Neoformat
+    augroup END
+
+    " remember last location in file, but not for commit messages,
+    " or when the position is invalid or inside an event handler,
+    " or when the mark is in the first line, that is the default
+    " position when opening a file. See :help last-position-jump
+    augroup last_position
+      au!
+      au BufReadPost *
+        \ if &filetype !~ '^git\c' && line("'\"") > 1 && line("'\"") <= line("$") |
+        \   exe "normal! g`\"" |
+        \ endif
+    augroup END
+  endif
 endif
 " }}}
 
@@ -230,6 +230,7 @@ nnoremap <Down>  :echo "no!"<CR>
 
 " Plugins {{{
 if exists('g:vscode')
+  let g:loaded_vimux = 1 " disable vimux
   nnoremap <Leader>f :call VSCodeNotify("workbench.action.quickOpen")<CR>
 else
   nnoremap <Leader>gs  :Gstatus<CR>
