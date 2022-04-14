@@ -3,7 +3,7 @@
     enable = true;
     userName = "Ju Liu";
     userEmail = "liuju86@gmail.com";
-    ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ];
+    ignores = [ "*~" ".DS_Store" ".direnv" ".env" "tags" ".rgignore" ];
     extraConfig = { pull = { ff = "only"; }; };
     lfs = { enable = true; };
     delta = { enable = true; };
