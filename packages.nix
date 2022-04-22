@@ -22,6 +22,7 @@ in {
     pkgs.htop
     pkgs.jq
     pkgs.libiconv
+    pkgs.mosh
     pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.nodejs-16_x
