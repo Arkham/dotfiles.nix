@@ -150,13 +150,6 @@ function last_migration {
   vim `echo_last_migration $*`
 }
 
-# smart jetpack
-function jetpack_dev () {
-  QUERY="$1"
-  jetpack $(find ui/modules -type f | fzf -m -q "$QUERY" --select-1 --bind='ctrl-a:select-all,ctrl-d:deselect-all') --watch
-}
-alias jedev="jetpack_dev"
-
 # find and edit
 function find_and_edit () {
   if test -d .git
