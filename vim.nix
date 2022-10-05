@@ -7,7 +7,7 @@ let
     lib.filterAttrs (_: source: lib.hasAttrByPath [ "vim" ] source) sources;
 
   vimUnpatched = lib.mapAttrs (name: source:
-    pkgs.vimUtils.buildVimPlugin {
+    pkgs.vimUtils.buildVimPluginFrom2Nix {
       name = name;
       src = source;
     }) vimSources;

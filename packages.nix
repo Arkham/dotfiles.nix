@@ -9,7 +9,7 @@ in {
   home.packages = [
     niv.niv
     pkgs-unstable.comma
-    pkgs.bashCompletion
+    pkgs.bash-completion
     pkgs.bashInteractive
     pkgs.bat
     pkgs.coreutils
