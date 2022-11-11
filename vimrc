@@ -294,6 +294,7 @@ else
   let g:neoformat_enabled_json = []
   let g:neoformat_enabled_nix = ['nixfmt']
   let g:neoformat_enabled_ruby = []
+  let g:neoformat_enabled_yaml = []
   let g:neoformat_only_msg_on_error = 1
   let g:test#preserve_screen = 1
   let g:test#strategy = "vimux"
