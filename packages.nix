@@ -21,17 +21,16 @@ in {
     pkgs.htop
     pkgs.jq
     pkgs.libiconv
-    pkgs.mosh
     pkgs.nix-bash-completions
     pkgs.nixfmt
+    pkgs.nodePackages.prettier
+    pkgs-unstable.nodePackages.typescript
     pkgs.nodejs
-    pkgs.nodePackages.typescript
     pkgs.ripgrep
     pkgs.shadowenv
     pkgs.tree
     pkgs.watch
     pkgs.wget
-    pkgs.yarn
     pkgs.yt-dlp
   ];
 }
