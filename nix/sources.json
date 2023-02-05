@@ -25,16 +25,16 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "gruvbox-material": {
-        "branch": "master",
-        "description": "Gruvbox with Material Palette",
+    "gruvbox.nvim": {
+        "branch": "main",
+        "description": "Lua port of the most famous vim colorscheme",
         "homepage": "",
-        "owner": "sainnhe",
-        "repo": "gruvbox-material",
-        "rev": "13b7eb4589d9ab0f388ca51047051f7158c930e5",
-        "sha256": "0mivkynl1xl40mk9ppiixk5mk8z70g30i7bm3lwpg02746vyp04v",
+        "owner": "ellisonleao",
+        "repo": "gruvbox.nvim",
+        "rev": "211ce2ee4c9bb94b0426375543889f1f6fcfca89",
+        "sha256": "05mgg6kj95kjmm2acw7gr5d6566c4dsfylriz65sm7sgia8pn44k",
         "type": "tarball",
-        "url": "https://github.com/sainnhe/gruvbox-material/archive/13b7eb4589d9ab0f388ca51047051f7158c930e5.tar.gz",
+        "url": "https://github.com/ellisonleao/gruvbox.nvim/archive/211ce2ee4c9bb94b0426375543889f1f6fcfca89.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
