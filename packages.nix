@@ -4,14 +4,14 @@ let
   sources = import ./nix/sources.nix;
   niv = import sources.niv { };
   pkgs = import sources.nixpkgs { };
-  pkgs-unstable = import sources.nixpkgs-unstable { };
+  # pkgs-unstable = import sources.nixpkgs-unstable { };
 in {
   home.packages = [
     niv.niv
-    pkgs-unstable.comma
     pkgs.bash-completion
     pkgs.bashInteractive
     pkgs.bat
+    pkgs.comma
     pkgs.coreutils
     pkgs.elmPackages.elm
     pkgs.elmPackages.elm-format
@@ -23,8 +23,7 @@ in {
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
-    pkgs.nodePackages.prettier
-    pkgs-unstable.nodePackages.typescript
+    pkgs.nodePackages.typescript
     pkgs.nodejs
     pkgs.ripgrep
     pkgs.shadowenv
