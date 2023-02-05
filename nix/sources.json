@@ -25,19 +25,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "gruvbox.nvim": {
-        "branch": "main",
-        "description": "Lua port of the most famous vim colorscheme",
-        "homepage": "",
-        "owner": "ellisonleao",
-        "repo": "gruvbox.nvim",
-        "rev": "211ce2ee4c9bb94b0426375543889f1f6fcfca89",
-        "sha256": "05mgg6kj95kjmm2acw7gr5d6566c4dsfylriz65sm7sgia8pn44k",
-        "type": "tarball",
-        "url": "https://github.com/ellisonleao/gruvbox.nvim/archive/211ce2ee4c9bb94b0426375543889f1f6fcfca89.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "haskell-vim": {
         "branch": "master",
         "description": "Custom Haskell Vimscripts",
@@ -254,6 +241,19 @@
         "sha256": "174qmalqmg8miq7ixc0c3w66qpc46c9rxvpw6sn8qalyifb0z7fj",
         "type": "tarball",
         "url": "https://github.com/tpope/vim-fugitive/archive/46652a304f0b89f36d70cee954d77e467ec0f6de.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
+    "vim-gruvbox8": {
+        "branch": "master",
+        "description": "A simplified and optimized Gruvbox colorscheme for Vim",
+        "homepage": null,
+        "owner": "lifepillar",
+        "repo": "vim-gruvbox8",
+        "rev": "f94afba273ec544e1e73e82c78674eed4ccb1c8c",
+        "sha256": "1gjnp05a10bad1f12xc5pb1m54jzkq3hh8a83l8aq6377a1z9bky",
+        "type": "tarball",
+        "url": "https://github.com/lifepillar/vim-gruvbox8/archive/f94afba273ec544e1e73e82c78674eed4ccb1c8c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },

@@ -15,8 +15,9 @@ set noswapfile                    " and swap files
 set shortmess+=I                  " disable intro message
 
 " Style
+set termguicolors
 set background=dark
-silent! color gruvbox
+silent! color gruvbox8
 set number                        " line numbers are cool
 set ruler                         " show the cursor position all the time
 set nocursorline                  " disable cursor line
