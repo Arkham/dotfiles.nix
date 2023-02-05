@@ -25,6 +25,19 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
+    "gruvbox.nvim": {
+        "branch": "main",
+        "description": "Lua port of the most famous vim colorscheme",
+        "homepage": "",
+        "owner": "ellisonleao",
+        "repo": "gruvbox.nvim",
+        "rev": "2e93ac50b3e95d650e62729f8810a005861e77ad",
+        "sha256": "0ahgpgjazrwsvqpvsgbgwzhiglzb291d1ww20f8grakdhppvas3h",
+        "type": "tarball",
+        "url": "https://github.com/ellisonleao/gruvbox.nvim/archive/2e93ac50b3e95d650e62729f8810a005861e77ad.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
+    },
     "haskell-vim": {
         "branch": "master",
         "description": "Custom Haskell Vimscripts",
@@ -100,19 +113,6 @@
         "type": "tarball",
         "url": "https://github.com/NixOS/nixpkgs/archive/d840126a0890621e7b220894d749132dd4bde6a0.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "onedark.nvim": {
-        "branch": "master",
-        "description": "One dark and light colorscheme for neovim >= 0.5.0 written in lua based on Atom's One Dark and Light theme. Additionally, it comes with 5 color variant styles",
-        "homepage": "",
-        "owner": "navarasu",
-        "repo": "onedark.nvim",
-        "rev": "f0a70e0993acbb348c32a52a88058cc60c160992",
-        "sha256": "0mscpy6949zvcwfdp18nn4bkzrp9r5iyw4h2v310p5mr8gd3fjpv",
-        "type": "tarball",
-        "url": "https://github.com/navarasu/onedark.nvim/archive/f0a70e0993acbb348c32a52a88058cc60c160992.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
     },
     "quickfix-reflector.vim": {
         "branch": "master",
