@@ -232,6 +232,7 @@ nnoremap <Down>  :echo "no!"<CR>
 " Plugins {{{
 if exists('g:vscode')
   let g:loaded_vimux = 1 " disable vimux
+  let g:goldenview__enable_at_startup = 0 " disable goldenview
   nnoremap <Leader>f :call VSCodeNotify("workbench.action.quickOpen")<CR>
 else
   nnoremap <Leader>gs  :Gstatus<CR>
