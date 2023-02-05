@@ -16,7 +16,8 @@ set shortmess+=I                  " disable intro message
 
 " Style
 set background=dark
-silent! color gruvbox
+let g:gruvbox_material_better_performance = 1
+silent! color gruvbox-material
 set number                        " line numbers are cool
 set ruler                         " show the cursor position all the time
 set nocursorline                  " disable cursor line
@@ -282,7 +283,7 @@ else
   let g:haskell_indent_let = 4
   let g:haskell_indent_where = 6
   let g:hdevtools_stack = 1
-  let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
+  let g:lightline = { 'colorscheme': 'gruvbox_material', 'mode_fallback': { 'terminal': 'normal' } }
   let g:loaded_python_provider = 1
   let g:mundo_right = 1
   let g:neoformat_nix_nixfmt = {
