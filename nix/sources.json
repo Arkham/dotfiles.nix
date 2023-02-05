@@ -12,19 +12,6 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },
-    "alchemist.vim": {
-        "branch": "master",
-        "description": "Elixir Integration Into Vim",
-        "homepage": "https://github.com/slashmili/alchemist.vim/wiki",
-        "owner": "slashmili",
-        "repo": "alchemist.vim",
-        "rev": "3d370d163a48bdeccea4be541686cce67a52b996",
-        "sha256": "0svciz70yccaaifq1ivb7f0cwfjssmrkm7fbpjlylslx6wjjfc1i",
-        "type": "tarball",
-        "url": "https://github.com/slashmili/alchemist.vim/archive/3d370d163a48bdeccea4be541686cce67a52b996.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
     "ale": {
         "branch": "master",
         "description": "Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support",
@@ -113,6 +100,19 @@
         "type": "tarball",
         "url": "https://github.com/NixOS/nixpkgs/archive/72d8853228c9758820c39b8659415b6d89279493.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "onedark.nvim": {
+        "branch": "master",
+        "description": "One dark and light colorscheme for neovim >= 0.5.0 written in lua based on Atom's One Dark and Light theme. Additionally, it comes with 5 color variant styles",
+        "homepage": "",
+        "owner": "navarasu",
+        "repo": "onedark.nvim",
+        "rev": "f0a70e0993acbb348c32a52a88058cc60c160992",
+        "sha256": "0mscpy6949zvcwfdp18nn4bkzrp9r5iyw4h2v310p5mr8gd3fjpv",
+        "type": "tarball",
+        "url": "https://github.com/navarasu/onedark.nvim/archive/f0a70e0993acbb348c32a52a88058cc60c160992.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "vim": true
     },
     "quickfix-reflector.vim": {
         "branch": "master",
@@ -254,19 +254,6 @@
         "sha256": "174qmalqmg8miq7ixc0c3w66qpc46c9rxvpw6sn8qalyifb0z7fj",
         "type": "tarball",
         "url": "https://github.com/tpope/vim-fugitive/archive/46652a304f0b89f36d70cee954d77e467ec0f6de.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "vim": true
-    },
-    "vim-gruvbox8": {
-        "branch": "master",
-        "description": "A simplified and optimized Gruvbox colorscheme for Vim",
-        "homepage": null,
-        "owner": "lifepillar",
-        "repo": "vim-gruvbox8",
-        "rev": "f94afba273ec544e1e73e82c78674eed4ccb1c8c",
-        "sha256": "1gjnp05a10bad1f12xc5pb1m54jzkq3hh8a83l8aq6377a1z9bky",
-        "type": "tarball",
-        "url": "https://github.com/lifepillar/vim-gruvbox8/archive/f94afba273ec544e1e73e82c78674eed4ccb1c8c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "vim": true
     },

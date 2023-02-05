@@ -15,8 +15,8 @@ set noswapfile                    " and swap files
 set shortmess+=I                  " disable intro message
 
 " Style
-set background=dark
-silent! color gruvbox8
+let g:onedark_config = {'style': 'darker'}
+silent! color onedark
 set number                        " line numbers are cool
 set ruler                         " show the cursor position all the time
 set nocursorline                  " disable cursor line
