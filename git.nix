@@ -4,7 +4,10 @@
     userName = "Ju Liu";
     userEmail = "liuju86@gmail.com";
     ignores = [ "*~" ".DS_Store" ".direnv" ".env" ".rgignore" ];
-    extraConfig = { pull = { ff = "only"; }; };
+    extraConfig = {
+      init = { defaultBranch = "main"; };
+      pull = { ff = "only"; };
+    };
     delta = { enable = true; };
     aliases = {
       ci = "commit";
