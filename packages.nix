@@ -13,7 +13,6 @@
     pkgs.htop
     pkgs.jq
     pkgs.libiconv
-    pkgs.niv
     pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.nodePackages.typescript
@@ -23,6 +22,5 @@
     pkgs.tree
     pkgs.watch
     pkgs.wget
-    pkgs.yt-dlp
   ];
 }
