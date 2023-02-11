@@ -71,7 +71,7 @@ safe_source "$HOME/.asdf/completions/asdf.bash"
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 ## Load secrets
-safe_source "$HOME/.bashrc.secrets"
+safe_source "$HOME/.bash_secrets"
 
 ## Utilities
 # go back n directories

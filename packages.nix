@@ -1,10 +1,4 @@
-{ lib, ... }:
-
-let
-  sources = import ./nix/sources.nix;
-  pkgs = import sources.nixpkgs { };
-  # pkgs-unstable = import sources.nixpkgs-unstable { };
-in {
+{ lib, pkgs, ... }: {
   home.packages = [
     pkgs.bash-completion
     pkgs.bashInteractive

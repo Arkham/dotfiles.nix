@@ -1,10 +1,4 @@
-{ lib, ... }:
-
-let
-  sources = import ./nix/sources.nix;
-  pkgs = import sources.nixpkgs { };
-  pkgs-unstable = import sources.nixpkgs-unstable { };
-in {
+{ lib, ... }: {
   home.username = "arkham";
   home.homeDirectory = "/Users/arkham";
   home.stateVersion = "22.11";
