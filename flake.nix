@@ -26,10 +26,13 @@
       defaultPackage.aarch64-darwin =
         home-manager.defaultPackage.aarch64-darwin;
 
+      homeConfigurations."arkham@metal" =
+        home-manager.lib.homeManagerConfiguration (config "aarch64-darwin");
+
       homeConfigurations."arkham@mine" =
         home-manager.lib.homeManagerConfiguration (config "x86_64-darwin");
 
-      homeConfigurations."arkham@metal" =
-        home-manager.lib.homeManagerConfiguration (config "aarch64-darwin");
+      homeConfigurations."arkham@iMuck" =
+        home-manager.lib.homeManagerConfiguration (config "x86_64-darwin");
     };
 }
