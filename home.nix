@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ pkgs, ... }: {
   home.username = "arkham";
   home.homeDirectory =
     "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/arkham";

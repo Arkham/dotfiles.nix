@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ pkgs, ... }:
 let
   goldenview = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "goldenview";
