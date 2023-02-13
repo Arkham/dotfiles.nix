@@ -17,22 +17,23 @@
 
   outputs = { nixpkgs, home-manager, nix-index-database, ... }:
     let
-      config = system: {
-        pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./home.nix nix-index-database.hmModules.nix-index ];
-      };
+      withArch = arch:
+        home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${arch};
+          modules = [ ./home.nix nix-index-database.hmModules.nix-index ];
+        };
     in {
-      defaultPackage.x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
-      defaultPackage.aarch64-darwin =
-        home-manager.defaultPackage.aarch64-darwin;
+      defaultPackage = {
+        x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
+        aarch64-darwin = home-manager.defaultPackage.aarch64-darwin;
+        aarch64-linux = home-manager.defaultPackage.aarch64-linux;
+      };
 
-      homeConfigurations."arkham@metal" =
-        home-manager.lib.homeManagerConfiguration (config "aarch64-darwin");
-
-      homeConfigurations."arkham@mine" =
-        home-manager.lib.homeManagerConfiguration (config "x86_64-darwin");
-
-      homeConfigurations."arkham@iMuck" =
-        home-manager.lib.homeManagerConfiguration (config "x86_64-darwin");
+      homeConfigurations = {
+        "arkham@metal" = withArch "aarch64-darwin";
+        "arkham@mine" = withArch "x86_64-darwin";
+        "arkham@iMuck" = withArch "x86_64-darwin";
+        "arkham@pi" = withArch "aarch64-linux";
+      };
     };
 }
