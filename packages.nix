@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   home.packages = [
-    pkgs.bash-completion
     pkgs.bashInteractive
     pkgs.bat
     pkgs.comma
