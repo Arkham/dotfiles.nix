@@ -14,6 +14,7 @@
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt
+    pkgs.nodePackages.prettier
     pkgs.nodePackages.typescript
     pkgs.nodejs
     pkgs.ripgrep

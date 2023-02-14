@@ -270,7 +270,7 @@ else
         \ 'elixir': ['elixir-ls'],
         \ 'ruby': ['sorbet', 'ruby', 'rubocop'],
         \ 'nix': [],
-        \ 'typescript': ['eslint'],
+        \ 'typescript': ['tsserver'],
         \ 'elm': ['make'] }
   let g:fzf_layout = { 'down': '~30%' }
   let g:goldenview__enable_default_mapping = 0
