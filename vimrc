@@ -268,21 +268,12 @@ else
   let g:ale_linters = {
         \ 'haskell': ['hlint', 'hie', 'ormolu'],
         \ 'elixir': ['elixir-ls'],
-        \ 'ruby': ['solargraph', 'sorbet', 'ruby', 'rubocop'],
+        \ 'ruby': ['sorbet', 'ruby', 'rubocop'],
         \ 'nix': [],
+        \ 'typescript': ['eslint'],
         \ 'elm': ['make'] }
   let g:fzf_layout = { 'down': '~30%' }
   let g:goldenview__enable_default_mapping = 0
-  let g:haskell_indent_after_bare_where = 2
-  let g:haskell_indent_before_where = 2
-  let g:haskell_indent_case = 2
-  let g:haskell_indent_case_alternative = 1
-  let g:haskell_indent_do = 3
-  let g:haskell_indent_if = 3
-  let g:haskell_indent_in = 1
-  let g:haskell_indent_let = 4
-  let g:haskell_indent_where = 6
-  let g:hdevtools_stack = 1
   let g:lightline = { 'mode_fallback': { 'terminal': 'normal' } }
   let g:loaded_python_provider = 1
   let g:mundo_right = 1
