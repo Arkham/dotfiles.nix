@@ -234,6 +234,7 @@ if exists('g:vscode')
   let g:loaded_vimux = 1 " disable vimux
   let g:goldenview__enable_at_startup = 0 " disable goldenview
   nnoremap <Leader>f :call VSCodeNotify("workbench.action.quickOpen")<CR>
+  nnoremap <Leader>p :call VSCodeNotify("copyRelativeFilePath")<CR>
 else
   nnoremap <Leader>gs  :Gstatus<CR>
   nnoremap <Leader>gd  :Gdiff<CR>
