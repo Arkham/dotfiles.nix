@@ -46,6 +46,7 @@ in {
       splitjoin-vim
       supertab
       tabular
+      ultisnips
       vim-abolish
       vim-commentary
       vim-endwise

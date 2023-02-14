@@ -260,6 +260,7 @@ else
   nmap <C-n> <plug>(YoinkPostPasteSwapBack)
   nmap <C-p> <plug>(YoinkPostPasteSwapForward)
 
+  let g:UltiSnipsSnippetDirectories = ['~/.config/nixpkgs/snippets']
   let g:ale_elixir_elixir_ls_release = $HOME."/code/elixir-ls/rel"
   let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false } }
   let g:ale_haskell_hie_executable = "haskell-language-server-wrapper"
