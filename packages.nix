@@ -8,6 +8,7 @@
     pkgs.elmPackages.elm-format
     pkgs.elmPackages.elm-test
     pkgs.fortune
+    pkgs.gnugrep
     pkgs.gnused
     pkgs.htop
     pkgs.jq
