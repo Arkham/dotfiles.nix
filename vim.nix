@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  goldenview = pkgs.vimUtils.buildVimPluginFrom2Nix {
+  goldenview = pkgs.vimUtils.buildVimPlugin {
     name = "goldenview";
     src = pkgs.fetchFromGitHub {
       owner = "zhaocai";
@@ -10,7 +10,7 @@ let
     };
   };
 
-  shadowenv = pkgs.vimUtils.buildVimPluginFrom2Nix {
+  shadowenv = pkgs.vimUtils.buildVimPlugin {
     name = "shadowenv";
     src = pkgs.fetchFromGitHub {
       owner = "Arkham";
@@ -20,7 +20,7 @@ let
     };
   };
 
-  vim-yoink = pkgs.vimUtils.buildVimPluginFrom2Nix {
+  vim-yoink = pkgs.vimUtils.buildVimPlugin {
     name = "vim-yoink";
     src = pkgs.fetchFromGitHub {
       owner = "svermeulen";
