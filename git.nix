@@ -7,6 +7,7 @@
     extraConfig = {
       init = { defaultBranch = "main"; };
       pull = { ff = "only"; };
+      push = { autoSetupRemote = "true"; };
     };
     delta = { enable = true; };
     aliases = {

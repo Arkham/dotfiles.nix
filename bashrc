@@ -62,7 +62,7 @@ safe_source "$HOME/.asdf/asdf.sh"
 safe_source "$HOME/.asdf/completions/asdf.bash"
 
 # chruby support
-[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
 
 # homebrew support
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
@@ -167,4 +167,4 @@ function find_and_edit () {
 }
 
 ## Some random fortune
-shopt -q login_shell && has_program fortune && fortune -s
+shopt -q login_shell && has_program ftn && ftn -s
