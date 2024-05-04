@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 let
   ftn = pkgs.fortune.overrideAttrs (oldAttrs: {
     postInstall = ''
@@ -11,7 +11,7 @@ in {
     pkgs.bat
     pkgs.comma
     pkgs.coreutils
-    pkgs.elmPackages.elm
+    pkgs-stable.elmPackages.elm
     pkgs.elmPackages.elm-format
     pkgs.elmPackages.elm-test
     pkgs.gnugrep
@@ -20,7 +20,7 @@ in {
     pkgs.jq
     pkgs.libiconv
     pkgs.nix-bash-completions
-    pkgs.nixfmt
+    pkgs.nixfmt-classic
     pkgs.nodePackages.prettier
     pkgs.nodePackages.typescript
     pkgs.nodejs

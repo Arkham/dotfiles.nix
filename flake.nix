@@ -4,23 +4,28 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nix-index-database = {
-      url = "github:Mic92/nix-index-database";
+      url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { nixpkgs, home-manager, nix-index-database, ... }:
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nix-index-database, ... }:
     let
       withArch = arch:
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.${arch};
           modules = [ ./home.nix nix-index-database.hmModules.nix-index ];
+          extraSpecialArgs = {
+            pkgs-stable = nixpkgs-stable.legacyPackages.${arch};
+          };
         };
     in {
       defaultPackage = {
