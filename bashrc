@@ -54,6 +54,11 @@ export LESS_TERMCAP_so=$'\E[01;44;93m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;92m'
 
+## Load nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+
 ## Load direnv
 has_program direnv && eval "$(direnv hook bash)"
 
