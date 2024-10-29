@@ -12,8 +12,8 @@ in {
     pkgs.comma
     pkgs.coreutils
     pkgs-stable.elmPackages.elm
-    pkgs.elmPackages.elm-format
-    pkgs.elmPackages.elm-test
+    pkgs-stable.elmPackages.elm-format
+    pkgs-stable.elmPackages.elm-test
     pkgs.gnugrep
     pkgs.gnused
     pkgs.htop
