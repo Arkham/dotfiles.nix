@@ -6,7 +6,6 @@ set nocompatible                  " nocompatible is good for humans
 syntax enable                     " enable syntax highlighting...
 filetype plugin indent on         " depending on filetypes...
 runtime macros/matchit.vim        " with advanced matching capabilities
-set pastetoggle=<F12>             " for pasting code into Vim
 set timeout tm=1000 ttm=10        " fix slight delay after pressing Esc then O
 set autoread                      " auto load files if vim detects change
 set autowrite                     " auto write files when moving around
