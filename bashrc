@@ -75,9 +75,6 @@ safe_source "$HOME/.asdf/completions/asdf.bash"
 # dev support
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
-# Added by tec agent
-[[ -x /Users/arkham/.local/state/tec/profiles/base/current/global/init ]] && [[ $- == *i* ]] && eval "$(/Users/arkham/.local/state/tec/profiles/base/current/global/init bash)"
-
 ## Load secrets
 safe_source "$HOME/.bash_secrets"
 
