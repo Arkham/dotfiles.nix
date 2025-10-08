@@ -28,10 +28,10 @@
           };
         };
     in {
-      defaultPackage = {
-        x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
-        aarch64-darwin = home-manager.defaultPackage.aarch64-darwin;
-        aarch64-linux = home-manager.defaultPackage.aarch64-linux;
+      packages = {
+        aarch64-darwin.default = (withArch "aarch64-darwin").activationPackage;
+        x86_64-darwin.default = (withArch "x86_64-darwin").activationPackage;
+        aarch64-linux.default = (withArch "aarch64-linux").activationPackage;
       };
 
       homeConfigurations = {

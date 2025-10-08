@@ -8,4 +8,7 @@ if [[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
   . "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
+# Added by tec agent
+[[ -x /Users/arkham/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/arkham/.local/state/tec/profiles/base/current/global/init bash)"
+
 . "$HOME/.nix-profile/share/git/contrib/completion/git-prompt.sh"
