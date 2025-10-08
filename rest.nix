@@ -3,7 +3,8 @@
     enable = true;
     enableBashIntegration = true;
     defaultCommand = "rg --files --hidden --follow";
-    defaultOptions = [ "-m --bind ctrl-a:select-all,ctrl-d:deselect-all" ];
+    defaultOptions =
+      [ "--height=40%" "-m --bind ctrl-a:select-all,ctrl-d:deselect-all" ];
   };
 
   programs.bash = {
