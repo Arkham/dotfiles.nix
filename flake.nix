@@ -21,7 +21,10 @@
     let
       withArch = arch:
         home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.${arch};
+          pkgs = import nixpkgs {
+            system = arch;
+            config = { allowUnfree = true; };
+          };
           modules = [ ./home.nix nix-index-database.hmModules.nix-index ];
           extraSpecialArgs = {
             pkgs-stable = nixpkgs-stable.legacyPackages.${arch};

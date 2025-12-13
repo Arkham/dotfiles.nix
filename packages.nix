@@ -9,6 +9,7 @@ in {
   home.packages = [
     pkgs.bashInteractive
     pkgs.bat
+    pkgs.claude-code
     pkgs.comma
     pkgs.coreutils
     pkgs-stable.elmPackages.elm
