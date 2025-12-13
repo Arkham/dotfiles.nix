@@ -22,6 +22,7 @@ in {
     pkgs.libiconv
     pkgs.nix-bash-completions
     pkgs.nixfmt-classic
+    pkgs.nmap
     pkgs.nodePackages.prettier
     pkgs.nodePackages.typescript
     pkgs.nodejs
