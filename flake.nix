@@ -25,7 +25,7 @@
             system = arch;
             config = { allowUnfree = true; };
           };
-          modules = [ ./home.nix nix-index-database.hmModules.nix-index ];
+          modules = [ ./home.nix nix-index-database.homeModules.nix-index ];
           extraSpecialArgs = {
             pkgs-stable = nixpkgs-stable.legacyPackages.${arch};
           };
