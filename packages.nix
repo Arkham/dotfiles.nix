@@ -10,7 +10,6 @@ in {
     pkgs.bashInteractive
     pkgs.bat
     pkgs.claude-code
-    pkgs.comma
     pkgs.coreutils
     pkgs-stable.elmPackages.elm
     pkgs-stable.elmPackages.elm-format
