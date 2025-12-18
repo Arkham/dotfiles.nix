@@ -25,7 +25,6 @@ in {
     pkgs.nodePackages.prettier
     pkgs.nodePackages.typescript
     pkgs.nodejs
-    pkgs.ripgrep
     pkgs.shadowenv
     pkgs.tree
     pkgs.watch

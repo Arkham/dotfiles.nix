@@ -60,6 +60,11 @@
 
   programs.eza = { enable = true; };
 
+  programs.ripgrep = {
+    enable = true;
+    arguments = [ "--hidden" "--smart-case" "--follow" "--glob=!.git/" ];
+  };
+
   home.file.".inputrc".source = ./inputrc;
   home.file.".gemrc".text = "gem: --no-ri --no-rdoc";
 }
