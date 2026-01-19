@@ -72,6 +72,9 @@ safe_source "$HOME/.asdf/completions/asdf.bash"
 # homebrew support
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
+# Added by tec agent
+[[ -x /Users/arkham/.local/state/tec/profiles/base/current/global/init ]] && [[ $- == *i* ]] && eval "$(/Users/arkham/.local/state/tec/profiles/base/current/global/init bash)"
+
 # dev support
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
