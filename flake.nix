@@ -19,7 +19,10 @@
 
   outputs = { nixpkgs, nixpkgs-stable, home-manager, nix-index-database, ... }:
     let
+      defaultEmail = "liuju86@gmail.com";
       withArch = arch:
+        withArchAndEmail arch defaultEmail;
+      withArchAndEmail = arch: gitEmail:
         home-manager.lib.homeManagerConfiguration {
           pkgs = import nixpkgs {
             system = arch;
@@ -28,6 +31,7 @@
           modules = [ ./home.nix nix-index-database.homeModules.nix-index ];
           extraSpecialArgs = {
             pkgs-stable = nixpkgs-stable.legacyPackages.${arch};
+            inherit gitEmail;
           };
         };
     in {
@@ -38,7 +42,7 @@
       };
 
       homeConfigurations = {
-        "arkham@metal" = withArch "aarch64-darwin";
+        "arkham@metal" = withArchAndEmail "aarch64-darwin" "ju.liu@shopify.com";
         "arkham@mine" = withArch "x86_64-darwin";
         "arkham@iMuck" = withArch "x86_64-darwin";
         "arkham@pi" = withArch "aarch64-linux";

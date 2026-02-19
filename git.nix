@@ -1,3 +1,4 @@
+{ gitEmail, ... }:
 {
   programs.git = {
     enable = true;
@@ -5,7 +6,7 @@
     settings = {
       user = {
         name = "Ju Liu";
-        email = "liuju86@gmail.com";
+        email = gitEmail;
       };
       init = { defaultBranch = "main"; };
       pull = { ff = "only"; };
