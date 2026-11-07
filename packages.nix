@@ -23,6 +23,7 @@ in
     pkgs.nix-bash-completions
     pkgs.nixfmt
     pkgs.nmap
+    pkgs.pi-coding-agent
     pkgs.prettier
     pkgs.typescript
     pkgs.nodejs
