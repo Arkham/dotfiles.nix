@@ -43,6 +43,7 @@
 
       homeConfigurations = {
         "arkham@metal" = withArchAndEmail "aarch64-darwin" "ju.liu@shopify.com";
+        "arkham@mein" = withArch "aarch64-darwin";
         "arkham@mine" = withArch "x86_64-darwin";
         "arkham@iMuck" = withArch "x86_64-darwin";
         "arkham@pi" = withArch "aarch64-linux";

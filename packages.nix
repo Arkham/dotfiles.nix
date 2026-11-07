@@ -20,10 +20,10 @@ in {
     pkgs.jq
     pkgs.libiconv
     pkgs.nix-bash-completions
-    pkgs.nixfmt-classic
+    pkgs.nixfmt
     pkgs.nmap
-    pkgs.nodePackages.prettier
-    pkgs.nodePackages.typescript
+    pkgs.prettier
+    pkgs.typescript
     pkgs.nodejs
     pkgs.shadowenv
     pkgs.tree
