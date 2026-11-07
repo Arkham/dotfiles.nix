@@ -5,7 +5,8 @@ let
       mv $out/bin/fortune $out/bin/ftn
     '';
   });
-in {
+in
+{
   home.packages = [
     pkgs.bashInteractive
     pkgs.bat
