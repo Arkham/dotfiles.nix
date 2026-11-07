@@ -10,7 +10,6 @@ in
   home.packages = [
     pkgs.bashInteractive
     pkgs.bat
-    pkgs.claude-code
     pkgs.coreutils
     pkgs-stable.elmPackages.elm
     pkgs-stable.elmPackages.elm-format
